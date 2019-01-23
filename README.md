@@ -3,6 +3,12 @@
 Optimized implementation of BKZ lattice reduction algorithm using `ntl-5.5.2` and `fplll`.
 
 ```
+git clone https://github.com/diptadas/bkz-algorithm.git
+cd bkz-algorithm
+docker run -it -v $(pwd):/bkz -w /bkz diptadas/bkz-utils
+```
+
+```
 g++ main.cpp -lntl
 ./a.out
 ```
