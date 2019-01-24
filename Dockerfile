@@ -23,3 +23,7 @@ tar xzf fplll-5.2.1.tar.gz && cd fplll-5.2.1 && \
 RUN wget https://www.shoup.net/ntl/ntl-5.5.2.tar.gz && \
 tar xzf ntl-5.5.2.tar.gz && cd ntl-5.5.2/src && \
 ./configure && make && make install
+
+# cleanup
+WORKDIR /
+RUN rm -r /bkz-tools
